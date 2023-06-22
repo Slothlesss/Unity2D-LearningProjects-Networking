@@ -14,4 +14,4 @@
 - This is a second project I learnt, I got a little trouble to understand Host-Client, Rpc and UnityEvent. However, I finally understand it after watching the tutorial several times.
 - Firstly, I learnt some terminologies about networking, how to set up Parrallel Sync on Unity to run host, server and client at the same time. Besides, through the tutorial, I know how to use some basic APIs of Unity.Netcode.
 - The project includes host-client model (client authoritative movement) to handle player movement.
-- It also includes server-client model (server authoritative movement). From this part, I know how to use ServerRpc and ClientRpc.
+- It also includes server-client model (server authoritative movement). ServerRpc is used to call function from Client and run it from Server. In contrast, ClientRpc is used to call function from Server and run it from Client.
