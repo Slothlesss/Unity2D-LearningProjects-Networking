@@ -15,4 +15,3 @@
 - Firstly, I learnt some terminologies about networking, how to set up Parrallel Sync on Unity to run host, server and client at the same time. Besides, through the tutorial, I know how to use some basic APIs of Unity.Netcode.
 - The project includes host-client model (client authoritative movement) to handle player movement.
 - It also includes server-client model (server authoritative movement). From this part, I know how to use ServerRpc and ClientRpc.
-- Besides, after this project, I know how to use Unity Event.
