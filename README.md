@@ -16,8 +16,3 @@
 - The project includes host-client model (client authoritative movement) to handle player movement.
 - It also includes server-client model (server authoritative movement). ServerRpc is used to call function from Client and run it from Server. In contrast, ClientRpc is used to call function from Server and run it from Client.
 ---
-## _Netcode-KitchenGame_
-### Source
-- [Learn Unity Multiplayer (FREE Complete Course, Netcode for Game Objects Unity Tutorial 2023)](https://www.youtube.com/watch?v=7glCsF9fv3s&t=237s)
-### About
-- This is a third project I learnt about networking before I started doing my own project.
