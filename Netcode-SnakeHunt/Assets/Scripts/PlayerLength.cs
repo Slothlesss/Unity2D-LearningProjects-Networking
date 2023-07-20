@@ -22,7 +22,10 @@ public class PlayerLength : NetworkBehaviour
         _tails = new List<GameObject>();
         _lastTail = transform;
         _collider2D = GetComponent<Collider2D>();
-        if (!IsServer) length.OnValueChanged += LengthChangedEvent;
+        if (!IsServer)
+        {
+            length.OnValueChanged += LengthChangedEvent;
+        }
     }
 
     public override void OnNetworkDespawn()
@@ -44,6 +47,8 @@ public class PlayerLength : NetworkBehaviour
     [ContextMenu("AddLength")]
     public void AddLength()
     {
+
+        Debug.Log("2"); //Server will run this
         length.Value += 1;
         LengthChanged(); 
     }
@@ -61,7 +66,7 @@ public class PlayerLength : NetworkBehaviour
 
     private void LengthChangedEvent(ushort previousValue, ushort newValue)
     {
-        Debug.Log("LengthChanged Callback");
+        Debug.Log("1");  //Client will run this
         LengthChanged();
     }
 

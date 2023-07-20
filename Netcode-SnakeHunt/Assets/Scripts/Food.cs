@@ -9,8 +9,13 @@ public class Food : NetworkBehaviour
     {
         if (!collision.CompareTag("Player")) return;
 
-        if (!NetworkManager.Singleton.IsServer) return;
-
+        Debug.Log("123");
+        if (!NetworkManager.Singleton.IsServer)
+        {
+            return;
+        }
+        
+        
         if (collision.TryGetComponent(out PlayerLength playerLength))
         {
             playerLength.AddLength();
